@@ -33,10 +33,10 @@ function hero(props) {
               <Button>HOME</Button>
             </div>
             <div className="innerNavBtns">
-              <Button>SERVICES</Button>
+              <Button>ABOUT US</Button>
             </div>
             <div className="innerNavBtns">
-              <Button>ABOUT US</Button>
+              <Button>SERVICES</Button>
             </div>
             <div className="innerNavBtns">
               <Button>REGISTER</Button>
