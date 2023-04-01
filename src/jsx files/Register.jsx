@@ -4,18 +4,17 @@ import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 import Grid from "@mui/material/Grid";
 import Form from "react-bootstrap/Form";
-
+import registerbg from "../pics/registerImg.png";
 function Register(props) {
   return (
     <>
-      <div className="Container" id="register">
+      <div
+        className="Container"
+        id="register"
+        style={{ backgroundImage: `url(${registerbg})` }}
+      >
         {/*main section starts here*/}
         <div className="section">
-          <img
-            src={require("../pics/registerImg.png")}
-            alt="BgPic"
-            className="BgImg"
-          />
           <div className="mainBody">
             <Box className="mainBox">
               <div className="boxHead">

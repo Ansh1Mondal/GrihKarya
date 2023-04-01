@@ -1,0 +1,35 @@
+.card-container{
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+.card-head{
+    font-size: 2.5rem;
+    height: 100%;
+    width: 100%;
+    color: rgb(129, 106, 77);
+    /* background-color: aqua; */
+}
+.card-cards{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+    height: 100%;
+}
+.card1{
+    margin: 2rem;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    
+}
+.card1 Button{
+    background-color: brown;
+}
+.cardback{
+    border-radius: 10px 10px 0px 0px;
+    background-color: salmon;
+}

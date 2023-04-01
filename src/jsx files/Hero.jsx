@@ -27,12 +27,22 @@ function hero(props) {
               </Button>
             </div>
             <div className="innerNavBtns">
-              <Button onClick={() => {
+              <Button
+                onClick={() => {
                   document.getElementById("about").scrollIntoView();
-                }}>ABOUT US</Button>
+                }}
+              >
+                ABOUT US
+              </Button>
             </div>
             <div className="innerNavBtns">
-              <Button>SERVICES</Button>
+              <Button
+                onClick={() => {
+                  document.getElementById("service").scrollIntoView();
+                }}
+              >
+                SERVICES
+              </Button>
             </div>
             <div className="innerNavBtns">
               <Button
