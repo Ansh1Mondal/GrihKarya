@@ -1,0 +1,129 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: #e4b991;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+}
+
+.navLogo {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.Logo {
+  margin-left: 2rem;
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+.navbtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbtns .innerNavBtns {
+  padding: 1rem;
+  color: aliceblue;
+}
+.innerNavBtns Button {
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+
+.navbtns li Button {
+  color: aliceblue;
+  background: #5b4f47;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbtns li {
+  margin-top: 10px;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.BgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.mainBody {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.mainBox {
+  margin-top: 8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  width: 50rem;
+  background: #ffdcbc;
+  color: #5b4f47;
+  border-radius: 15px;
+  opacity: 70%;
+}
+
+.boxHead {
+  margin-top: 1.2rem;
+}
+
+.section .mainBody .boxArea {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section .mainBody .boxArea .innerArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  color: #5b4f47 !important;
+  height: 1.8rem;
+  width: 15rem;
+  margin: 0.5rem;
+  margin-left: 4.5rem;
+  background-attachment: fixed;
+  background-color: #ffdcbc;
+  border-color: #5b4f47;
+  border-radius: 0.3rem;
+  border-width: 0.001rem;
+}
+
+.inputS {
+  height: 2.1rem;
+  width: 15.3rem;
+  color: #5b4f47;
+}
+
+.section .mainBody .registerBtn {
+  color: rgb(18, 19, 20);
+  background: #aa7857;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+}
+
+.file-area {
+  margin: 0.5rem;
+  margin-left: 4.5rem;
+}
