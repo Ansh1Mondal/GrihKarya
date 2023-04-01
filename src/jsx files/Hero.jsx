@@ -6,20 +6,8 @@ import videoBg from "../pics/heroBgVid.mp4";
 function hero(props) {
   return (
     <>
-      <div className="container">
+      <div className="container" id="hero">
         <video src={videoBg} autoPlay loop muted />
-        {/* <div className="navbar">
-          <div className="nav-logo">LOGO</div>
-          <div className="nav-contents">
-            <div className="con-home">HOME</div>
-            <div className="con-services">SERVICES</div>
-            <div className="con-aboutUs">ABOUT US</div>
-            <div className="con-Register">REGISTER</div>
-            <div className="con-contactUs">CONTACT US</div>
-          </div>
-          <div className="nav-login">LOGIN</div>
-        </div> */}
-        {/* navbar starts */}
         <div className="navbar text-center">
           <div className="navLogo">
             <img
@@ -30,7 +18,13 @@ function hero(props) {
           </div>
           <div className="navbtns">
             <div className="innerNavBtns">
-              <Button>HOME</Button>
+              <Button
+                onClick={() => {
+                  document.getElementById("hero").scrollIntoView();
+                }}
+              >
+                HOME
+              </Button>
             </div>
             <div className="innerNavBtns">
               <Button>ABOUT US</Button>
@@ -39,7 +33,13 @@ function hero(props) {
               <Button>SERVICES</Button>
             </div>
             <div className="innerNavBtns">
-              <Button>REGISTER</Button>
+              <Button
+                onClick={() => {
+                  document.getElementById("register").scrollIntoView();
+                }}
+              >
+                REGISTER
+              </Button>
             </div>
             <div className="innerNavBtns">
               <Button>CONTACT US</Button>
@@ -67,7 +67,13 @@ function hero(props) {
               <Button>HIRE</Button>
             </div>
             <div className="btn">
-              <Button>REGISTER</Button>
+              <Button
+                onClick={() => {
+                  document.getElementById("register").scrollIntoView();
+                }}
+              >
+                REGISTER
+              </Button>
             </div>
           </div>
         </div>

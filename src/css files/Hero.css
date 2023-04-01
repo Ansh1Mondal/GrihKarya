@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+html{
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -65,39 +69,10 @@ video{
 }
 
 .navbtns li {
-    margin-top: 10px;
+    margin-top: 17px;
     list-style: none;
     margin-right: 2rem;
 }
-/* .navbar{
-    height: 100%;
-    width: 100%;
-    background-color: #E4B991;
-    display: flex;
-    grid-template-columns: 30% 40% 30%;
-    text-align: center;
-    color: white;
-} */
-/* .nav-logo{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-} */
-/* .nav-contents{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    align-items: center;
-    justify-items: center;
-} */
-/* .nav-login{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-} */
 
 .Body{
     color: white;

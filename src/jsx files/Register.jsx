@@ -8,41 +8,7 @@ import Form from "react-bootstrap/Form";
 function Register(props) {
   return (
     <>
-      <div className="Container">
-        {/* navbar starts */}
-        <div className="navbar text-center">
-          <div className="navLogo">
-            <img
-              src={require("../pics/GK.png")}
-              alt="grihkarya"
-              className="Logo"
-            />
-          </div>
-          <div className="navbtns">
-            <div className="innerNavBtns">
-              <Button>HOME</Button>
-            </div>
-            <div className="innerNavBtns">
-              <Button>ABOUT US</Button>
-            </div>
-            <div className="innerNavBtns">
-              <Button>SERVICES</Button>
-            </div>
-            <div className="innerNavBtns">
-              <Button>REGISTER</Button>
-            </div>
-            <div className="innerNavBtns">
-              <Button>CONTACT US</Button>
-            </div>
-          </div>
-          <div className="navbtns">
-            <li>
-              <Button>LogIn</Button>
-            </li>
-          </div>
-        </div>
-        {/* navbar end */}
-
+      <div className="Container" id="register">
         {/*main section starts here*/}
         <div className="section">
           <img
@@ -88,7 +54,8 @@ function Register(props) {
                       <option>Specialization</option>
                       <option value="Cooking">Cooking</option>
                       <option value="Cleaning">Cleaning</option>
-                      <option value="Babysitting">Babysitting</option>
+                      <option value="Babysitting">Daycare</option>
+                      <option value="Babysitting">Washing</option>
                     </Form.Select>
                   </Grid>
                   <Grid item xs={6}>
