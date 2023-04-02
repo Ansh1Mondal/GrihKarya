@@ -19,17 +19,23 @@
     height: 100%;
 }
 .card1{
-    margin: 2rem;
+    margin: 1rem;
     /* border: 2px solid black; */
     border-radius: 10px;
     display: grid;
     grid-template-rows: 80% 20%;
+    /* align-items: center;
+    justify-content: center; */
     
 }
 .card1 Button{
+    justify-self: auto;
     background-color: brown;
+    color: white;
+    width: 72%;
+    margin-left: 2.9rem;
 }
 .cardback{
     border-radius: 10px 10px 0px 0px;
-    background-color: salmon;
+    /* background-color: salmon; */
 }
