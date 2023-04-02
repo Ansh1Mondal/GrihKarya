@@ -54,7 +54,9 @@ function hero(props) {
               </Button>
             </div>
             <div className="innerNavBtns">
-              <Button>CONTACT US</Button>
+              <Button onClick={() => {
+                  document.getElementById("contact").scrollIntoView();
+                }}>CONTACT US</Button>
             </div>
           </div>
           <div className="navbtns">

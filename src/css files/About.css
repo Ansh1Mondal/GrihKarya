@@ -25,15 +25,14 @@
 }
 .Abt-content{
     width: 40rem;
-    height:13rem;
+    height:10rem;
     font-size: 1.6rem;
     color:#5b4f47;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     text-align: justify;
     padding: 2rem;
     margin-top: 5rem;
-    margin-left: 25rem;
+    margin-left: 20rem;
     background-color: #ffdcbcbe;
-    border: 2px solid #5b4f47;
     border-radius: 50px;
 }

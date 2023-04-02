@@ -18,7 +18,7 @@ function Register(props) {
           <div className="mainBody">
             <Box className="mainBox">
               <div className="boxHead">
-                <h1>Register</h1>
+                <h1>REGISTER</h1>
               </div>
               <div className="boxArea">
                 <Grid

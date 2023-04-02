@@ -1,0 +1,56 @@
+* {
+  text-decoration: none;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+.contBox {
+  position: relative;
+  display: grid;
+  grid-template-rows: 15% 75% 1%;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  height: 22rem;
+  width: 70rem;
+  background: #ffdcbcd1;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  font-family: "Nunito", sans-serif;
+  text-align: left;
+  padding: 2rem;
+}
+.contHead {
+  margin-left: 8px;
+  color: #5b4f47;
+  font-family: "Raleway", sans-serif;
+}
+
+.contBox .submitButton {
+  background: #5b4f47;
+  color: #e4b991;
+  font-family: "Nunito", sans-serif;
+  font-size: large;
+  border-radius: 0.5rem;
+  padding: 0.2rem 3rem;
+  margin-left: 8px;
+}
+.main .nav {
+  height: 5rem;
+  /* margin-bottom: 5rem; */
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social .Logo{
+margin-top: 2rem;
+height: 7rem;
+width: 7rem;
+padding: 0.5rem;
+}
