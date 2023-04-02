@@ -8,25 +8,25 @@ function LoginWithOTP() {
   const handleSendOtp = async () => {
     // Send a request to your backend server to generate and send the OTP
     // You may want to include the user's phone number or email address in the request
-    const response = await fetch("/send-otp", {
-      method: "POST",
-      body: JSON.stringify({ phoneNumber }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    // const response = await fetch("/send-otp", {
+    //   method: "POST",
+    //   body: JSON.stringify({ phoneNumber }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
     setIsOtpSent(true);
   };
 
   const handleLogin = async () => {
     // Send a request to your backend server to validate the OTP
-    const response = await fetch("/validate-otp", {
-      method: "POST",
-      body: JSON.stringify({ phoneNumber, otp }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    // const response = await fetch("/validate-otp", {
+    //   method: "POST",
+    //   body: JSON.stringify({ phoneNumber, otp }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
     // If the OTP is valid, log the user in and redirect them to the appropriate page
   };
 
