@@ -1,11 +1,31 @@
 import React from "react";
-import { Box } from "@mui/system";
-import { Button } from "@mui/material";
+// import { Box } from "@mui/system";
+// import { Button } from "@mui/material";
 import "../css files/Contact.css";
-import TextField from "@mui/material/TextField";
+// import TextField from "@mui/material/TextField";
 import registerbg from "../pics/registerImg.png";
+import emailjs from "emailjs-com";
 
 export default function Contact(props) {
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_vyzxyzp",
+        "template_gyp9hgw",
+        e.target,
+        "5Z_eSsMNmETzCY3aX"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
   return (
     <>
       <div
@@ -13,53 +33,50 @@ export default function Contact(props) {
         id="contact"
         style={{ backgroundImage: `url(${registerbg})` }}
       >
-        <div>
-          <div className="nav"> </div>
-          <Box className="contBox">
-            <div className="contHead">CONTACT US</div>
-            <div className="names">
-              <Box
-                component="form"
-                sx={{
-                  "& .MuiTextField-root": { m: 1, width: "22ch" },
-                }}
-                noValidate
-                autoComplete="off"
-              >
-                <div>
-                  <TextField
-                    className="typebox"
-                    id="filled-search"
-                    label="EMAIL ID"
-                    type="text"
-                    variant="filled"
-                    style={{ width: 1100 }}
-                  />
-                </div>
-                <div>
-                  <TextField
-                    className="typebox"
-                    id="filled-search"
-                    label="DESCRIPTION"
-                    multiline
-                    maxRows={5}
-                    minRows={5}
-                    type="text"
-                    variant="filled"
-                    style={{ width: 1100 }}
-                  />
-                </div>
-              </Box>
+        <div className="nav"></div>
+        <div className="cont-c">
+          <form onSubmit={sendEmail}>
+            <div className="contact-body">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  className="cont-boxes"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  className="cont-boxes"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  className="cont-boxes"
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Your Message"
+                  name="message"
+                  className="cont-boxes"
+                ></textarea>
+              </div>
+              <div className="send-btn">
+                <input
+                  type="submit"
+                  className="btn btn-info"
+                  value="Send Message"
+                />
+              </div>
             </div>
-            <div className="password">
-              <Box sx={{ display: "flex", flexWrap: "wrap" }}></Box>
-            </div>
-            <div className="contact">
-              <Button variant="contained" className="submitButton">
-                CONTACT
-              </Button>
-            </div>
-          </Box>
+          </form>
         </div>
         <div className="social">
           <div className="Logo">

@@ -3,17 +3,18 @@
 }
 
 .main {
+  /* margin-top: 15rem; */
   height: 100vh;
   width: 100vw;
 }
-.contBox {
+.cont-c {
   position: relative;
   display: grid;
   grid-template-rows: 15% 75% 1%;
   justify-items: center;
   align-items: center;
-  margin-top: 2rem;
-  margin-left: 12rem;
+  margin-top: 0rem;
+  margin-left: 10rem;
   margin-right: 6rem;
   height: 22rem;
   width: 70rem;
@@ -24,24 +25,24 @@
   text-align: left;
   padding: 2rem;
 }
+
+.contact-body{
+  margin-top: 25rem;
+}
+.send-btn{
+  margin-left: 8rem;
+  /* height: 2rem; */
+}
+.cont-boxes{
+  background-color: #e4b991;
+  margin: 1rem;
+  width: 20rem;
+  height: 2rem;
+}
 .contHead {
   margin-left: 8px;
   color: #5b4f47;
   font-family: "Raleway", sans-serif;
-}
-
-.contBox .submitButton {
-  background: #5b4f47;
-  color: #e4b991;
-  font-family: "Nunito", sans-serif;
-  font-size: large;
-  border-radius: 0.5rem;
-  padding: 0.2rem 3rem;
-  margin-left: 8px;
-}
-.main .nav {
-  height: 5rem;
-  /* margin-bottom: 5rem; */
 }
 .social {
   display: flex;
